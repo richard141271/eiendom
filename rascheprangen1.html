@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rascheprangen 1 — Eiendomsinvest</title>
+  <link rel="icon" href="assets/favicon.jpg" />
+  <style>
+    /* Kopier stilblokken fra index.html (for konsistent utseende). */
+    /* ... (lim inn CSS fra index.html her) ... */
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#fbfdff 0%, #f8fafc 100%);color:#0f1720}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;gap:18px;padding:12px 0}
+    .logo img{height:48px}
+    .breadcrumbs{color:#64748b;margin-bottom:12px;font-size:13px}
+    .property-hero{background:#fff;padding:22px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,36,0.06)}
+    .units{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:18px}
+    .unit{background:#fff;padding:14px;border-radius:10px;box-shadow:0 6px 16px rgba(12,17,26,0.04)}
+    .unit h4{margin:0 0 6px 0}
+    .back{display:inline-block;margin-top:12px;color:#334155;text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="assets/logo.jpg" alt="Eiendomsinvest logo" />
+      </div>
+      <nav style="margin-left:auto;color:#94a3b8">
+        <a href="index.html">Forside</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="breadcrumbs"><a href="index.html">Eiendommer</a> › Rascheprangen 1</div>
+
+      <section class="property-hero">
+        <h1>Rascheprangen 1 — Firemannsbolig</h1>
+        <p class="small">Kort beskrivelse: fire leiligheter, jevne leieinntekter, behov for løpende vedlikehold og oppgradering. Adresse: Fredriksprangen 1, Halden.</p>
+        <a class="back" href="index.html">← Tilbake til eiendommer</a>
+      </section>
+
+      <section style="margin-top:18px">
+        <h3>Enheter / leiligheter</h3>
+        <div class="units">
+          <!-- Gjenta én .unit per leilighet -->
+          <article class="unit" id="leil1">
+            <h4>Leilighet 1 — 2 rom</h4>
+            <div class="meta">Areal: 48 m² · Leie: (ledig/utleid)</div>
+            <p class="small">Kort info om standard, oppussing, foajé, etc.</p>
+            <a href="#leil1" style="font-weight:600;color:#0ea5a3;text-decoration:none">Se mer</a>
+          </article>
+
+          <article class="unit" id="leil2">
+            <h4>Leilighet 2 — 3 rom</h4>
+            <div class="meta">Areal: 62 m² · Leie: (ledig/utleid)</div>
+            <p class="small">Kort info om standard, potensial, etc.</p>
+          </article>
+
+          <!-- legg til flere unit-artikler etter behov -->
+        </div>
+      </section>
+
+      <section style="margin-top:22px" class="property-hero">
+        <h3>Dokumenter & notater</h3>
+        <p class="small">Her kan du lenke til PDF, plantegninger, tilstandsrapport etc. (vi legger til etterpå).</p>
+      </section>
+    </main>
+
+    <footer style="margin-top:28px;color:#94a3b8">© KIAS / Eiendomsinvest — Halden</footer>
+  </div>
+</body>
+</html>
